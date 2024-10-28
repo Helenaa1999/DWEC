@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            var num_global =0;
+            function asignarNumero(){
+                num_global =parseInt(prompt("Introduce el número: ")); //Con el prompt recibimos texto por lo que es necesario utilizar parseInt() para convertirlo en entero
+            }
+            function sumarNumero(){
+                num_global++;
+                alert("El número es: " + num_global);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Pedir Numero" onclick="asignarNumero();">
+        <input type="button" value="Incrementar Número" onclick="sumarNúmero();">
+    </body>
+</html>

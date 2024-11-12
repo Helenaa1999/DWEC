@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            function calcular_mayor(){
+                let num1=0;
+                let num2=0;
+                let num3=0;
+                let num_mayor=0;
+                num1=parseInt(prompt("Introduce un número: "));
+                num2=parseInt(prompt("Introduce un número: "));
+                num3=parseInt(prompt("Introduce un número: "));
+                num_mayor=Math.max(num1,num2,num3);
+                console.log("El número mayor es: " + num_mayor);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Pulsar" onclick="calcular_mayor();">
+    </body>
+</html>

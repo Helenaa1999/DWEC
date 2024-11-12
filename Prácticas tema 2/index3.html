@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tienda</title>
+        <script>
+            let productosDisponibles=['calcetines', 'guantes', 'pantalones', 'camiseta', 'zapatos','calcetines', 'guantes', 'pantalones', 'camiseta', 'zapatos'];
+            let listaProductosVendidos=[];
+            let ventas=0;
+            let productoSolicitado="";
+            let respuestaUsu="si";
+            let continuar=false;
+            let productosVendidosTotal;
+            if(respuestaUsu=="si"){
+                continuar=true;
+            }
+            while(continuar){
+                productoSolicitado=prompt("¿Qué producto deseas comprar?");
+                i=0;
+                let productoEncontrado=false;
+                while(!productoEncontrado && i<=listaProductosVendidos.length){
+                    if(productosDisponibles[i]==productoSolicitado){
+                        listaProductosVendidos.push(productosDisponibles[i]);
+                        let indiceProducto= productosDisponibles.indexOf(productoSolicitado);
+                        productosDisponibles.splice(indiceProducto,1);
+                        ventas ++;
+                        productoEncontrado=true;
+                    }
+                    i++;
+                    
+                }
+                console.log(productosDisponibles);
+                console.log(listaProductosVendidos);
+                alert(listaProductosVendidos)
+                if(!productoEncontrado){
+                    alert("Producto no disponible");
+                }
+                respuestaUsu=prompt("¿Desea continuar?");
+                if(respuestaUsu=="no"){
+                continuar=false;
+                }
+            }
+            alert("Se han realizado " + ventas + " en total.");
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

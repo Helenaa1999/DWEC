@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            function dividir_texto(){
+                texto="";
+                texto=prompt("Escribe un texto: ");
+                let primeraParte = texto.slice(0, texto.length/2);
+                let segundaParte = texto.slice(texto.length/2, texto.length)
+                alert(primeraParte + "----" + segundaParte);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Dividir texto" onclick="dividir_texto();">
+    </body>
+</html>

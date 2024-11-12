@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            function calcular_edad_mayor(){
+                edad_usu1 =0;
+                edad_usu2 =0;
+                edad_usu1=parseInt(prompt("Introduce la edad del usuario 1: "));
+                edad_usu2 = parseInt(prompt("Introduce la edad del usuario 2: "));
+                if(edad_usu1>edad_usu2){
+                    alert("El usuario 1 es mayor");
+                }
+                else{
+                    alert("El usuario 2 es mayor");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Pulsar" onclick="calcular_edad_mayor();">
+    </body>
+</html>

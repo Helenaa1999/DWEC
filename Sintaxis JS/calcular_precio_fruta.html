@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            function calcular_precio_fruta(){
+                let fruta ="";
+                fruta = prompt("Introduce una fruta");
+                fruta_minuscula=fruta.toLowerCase();
+                switch(fruta_minuscula){
+                    case 'pera': 
+                        alert("2.25 el kilo");
+                        break;
+                    case 'manzana':
+                        alert("4.45 el kilo");
+                        break;
+                    case 'melón':
+                        alert("3.4 el kilo");
+                        break;
+                    case 'sandía':
+                        alert("1.5 el kilo");
+                        break;
+                    default:
+                        alert("Valor erróneo");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Pulsar" onclick="calcular_precio_fruta();">
+    </body>
+</html>

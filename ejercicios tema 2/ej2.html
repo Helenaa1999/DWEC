@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            let num1=0;
+            let num2=0;
+            function pedirDatos(){
+                num1=parseInt(prompt("Escrime un número: "));
+                num2=parseInt(prompt("Escribe otro número: "));
+            };
+            function realizar_operaciones(){
+                    let suma=0;
+                    let resta=0;
+                    let multiplicacion=0;
+                    let division=0;
+                    suma=num1+num2;
+                    resta=num1-num2;
+                    multiplicacion=num1*num2;
+                    division=num1/num2;
+                    alert("----- \n Los resultados de las siguientes operaciones son: \n ----- \n Suma: " + suma
+                        + "\n ----- \n Resta: " + resta + "\n ----- \n Multiplicación: " + multiplicacion + "\n ----- \n División: " + division);
+            };
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Operaciones" onclick="pedirDatos();">
+        <input type="button" value="Resultados" onclick="realizar_operaciones();">
+    </body>
+</html>

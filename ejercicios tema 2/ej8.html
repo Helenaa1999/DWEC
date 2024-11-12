@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ej8</title>
+        <script>
+            function comprobarMultiplos5(){
+                let respuestaUsu=0;
+                respuestaUsu=parseInt(prompt("Introduce un número. Cuando sea múltiplo de 5, el programa se lo indicará"));
+                while (respuestaUsu%5!=0){
+                    respuestaUsu=parseInt(prompt("Introduce un número. Cuando sea múltiplo de 5, el programa se lo indicará"));
+                    if(respuestaUsu%5!=0){
+                        multiplo=false;}
+                }
+                alert(respuestaUsu + " es múltiplo de 5");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Múltiplos de 5" onclick="comprobarMultiplos5();">
+    </body>
+</html>

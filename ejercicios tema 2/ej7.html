@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            let respuesta;
+            let texto="";
+            function concatenar(){
+                let textoNuevo="";
+                do{
+                    texto=prompt("Escribe un texto")
+                    respuesta=prompt("¿Deseas concatenar el texto? Escribe si/no");
+                    textoConcatenado= textoNuevo.concat("--", texto);
+                    alert(textoConcatenado);
+                }while(respuesta=="si");
+            };   
+
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Concatenar textos" onclick="concatenar();">
+    </body>
+</html>

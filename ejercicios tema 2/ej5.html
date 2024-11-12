@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+           let edad=0;
+           let tieneCoche;
+           let respuesta;
+           if(respuesta == "si"){
+            tieneCoche=true;
+           }
+           function preguntar(){
+            edad=parseInt(prompt("¿Cuál es tu edad?"));
+            tieneCoche=prompt("¿Tienes coche? Responde si o no")
+           }
+           function ofrecerOferta(){
+            preguntar();
+            oferta=(edad*0.4)+50;
+            if(edad>18 && tieneCoche){
+                alert("Se te ha concedido la oferta y son: " + oferta + " euros menos")
+            }
+            else{
+                alert("No tiene derecho a la oferta");
+            }
+           }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Comprueba si tienes acceso a la oferta" onclick="ofrecerOferta();">
+    </body>
+</html>

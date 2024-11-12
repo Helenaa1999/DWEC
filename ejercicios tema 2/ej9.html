@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ej9</title>
+        <script>
+          let numeroUsu=0;
+          let tablaMultiplicar=[];
+          function pedirNumero(){
+            numeroUsu=parseInt(prompt("Dime un número y se mostrará su tabla de multiplicar: "));
+          }  
+          function multiplicar(numero){
+            let resultado=0;
+            let tablaMultiplicarAUsu;
+            for(let i=1; i<=10; i++){
+                resultado=numero*i;
+                tablaMultiplicar.push(resultado);
+            }
+          }
+          function ejecutarPrograma(){
+            pedirNumero();
+            multiplicar(numeroUsu);
+          }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Tablas de multiplicar" onclick="ejecutarPrograma();">
+    </body>
+</html>

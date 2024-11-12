@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <script>
+            let num1=0;
+            let num2=0;
+           function pedirNumeros(){
+            num1=parseInt(prompt("Introduce el primer número: "))
+            num2=parseInt(prompt("Introduce el segundo número: "));
+           }
+           function sumar(){
+            let suma=0;
+            pedirNumeros();
+            suma = num1 + num2;
+            alert("El resultado de la suma es: " + suma);
+           }
+           function restar(){
+            let resta=0;
+            pedirNumeros();
+            resta=num1-num2;
+            alert("El resultado de la resta es: " + resta);
+           }
+           function multiplicar(){
+            let multiplicacion=0;
+            pedirNumeros();
+            multiplicacion=num1*num2;
+            alert("El resultado de la multiciplicación es: " + multiplicacion);
+           }
+           function dividir(){
+            let division =0;
+            pedirNumeros();
+            if(num2!=0){
+                division=num1/num2;
+                alert("El resultado de la división es: " + division);
+            }
+            else{
+                alert("No se pueden hacer divisiones con un 0 en el divisor.")
+            }
+           }
+        </script>
+    </head>
+    <body>
+        <h1>Bienvenido a la calculadora online</h1>
+        <input type="button" value="Suma" onclick="sumar();">
+        <input type="button" value="Resta" onclick="restar();">
+        <input type="button" value="Multiciplicación" onclick="multiplicar();">
+        <input type="button" value="División" onclick="dividir();">
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ej9</title>
+        <script>
+            let cantidadNum=0;
+            let listaNum=[];
+            let num=0;
+            function preguntarUsu(){
+                cantidadNum=parseInt(prompt("¿Cuántos números deseas introducir?"));
+                let numRestantes=cantidadNum;
+                for(let i=0; i<cantidadNum; i++){
+                    num=parseInt(prompt("Escribe el número que desees. Te quedan " + numRestantes + " números por escribir."))
+                    listaNum.push(num);
+                    numRestantes -=1;
+                }
+                console.log(listaNum);
+            }
+            function calcularMayor(lista){
+                    let mayor=0;
+                    for(let i=0; i<lista.length; i++){
+                        if(lista[i]>lista[i+1]){
+                            mayor=lista[i];
+                        }
+                    }
+                    alert("El número mayor es: " + mayor);
+            }
+            function ejecutarPrograma(){
+                preguntarUsu();
+                calcularMayor(listaNum);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="¿Cuál es el mayor?" onclick="ejecutarPrograma();">
+    </body>
+</html>

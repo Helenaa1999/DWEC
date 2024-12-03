@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mis series favoritas</title>
+    </head>
+    <body>
+        <input type="button" value="Añadir series" onclick="añadirSeries();">
+        <h1>Mis series favoritas</h1>
+        <script>
+            let arraySeries=["Gambito de dama", "Vikingos", "La casa de papel"];
+            function añadirSeries(){
+                for (let i=0; i<arraySeries.length; i++){
+                    let serie=document.createElement("p");
+                    serie.innerHTML=arraySeries[i];
+                    document.body.appendChild(serie);
+                }
+            }
+        </script>
+    </body>
+</html>

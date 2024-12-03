@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>La mejor serie</title>
+    </head>
+    <body>
+        <input type="button" value="Añadir serie" onclick="añadirSerie();" >
+        <h1>La mejor serie</h1>
+        <script>
+            function añadirSerie(){
+                let serie= document.createElement("p");
+                serie.innerHTML=prompt("Escribe el nombre de una serie");
+                document.body.appendChild(serie);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+
+.prerreserva{
+    background-color: aqua;
+}
+
+.reservado{
+    background-color: gray;
+}
+
+i{
+    display:flex !important;
+    justify-content: center !important;
+}

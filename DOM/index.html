@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript DOM</title>
+        <script>
+            function añadir_parrafo(){
+                let parrafo=document.createElement("P");
+                parrafo.innerHTML="Mi primer párrafo";
+                document.body.appendChild(parrafo);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Añadir párrafo" onclick="añadir_parrafo();">
+    </body>
+</html>

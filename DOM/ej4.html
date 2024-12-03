@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Series</title>
+    </head>
+    <body>
+        <input type="button" value="Añadir series" onclick="añadirSeries();">
+        <script>
+            let series=["Vikingos", "Gambito de dama", "La casa de papel"];
+            function añadirSeries(){
+                for(let i=0; i<series.length;i++){
+                    let serie=document.createElement("li");
+                    serie.innerHTML= series[i];
+                    document.body.appendChild(serie);
+                }
+            }
+        </script>
+    </body>
+</html>

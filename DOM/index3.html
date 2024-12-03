@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript DOM</title>
+        <style>
+            table, th, td{border:1px solid;}
+        </style>
+        <input type="button" value="Crear tabla" onclick="crearTabla();">
+        <script>
+            function crearTabla(){
+                var tabla=null;
+                var fila=null;
+                var celda1=null;
+                var celda2=null;
+
+                tabla=document.createElement('table');
+                fila=tabla.insertRow(0);
+
+                celda1=fila.insertCell(0);
+                celda2=fila.insertCell(1);
+
+                celda1.innerHTML ="Series";
+                celda2.innerHTML="temporadas";
+
+                document.body.appendChild(tabla);
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

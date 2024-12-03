@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Imágenes</title>
+    </head>
+    <body>
+        <input type="button" value="Añadir imagen" onclick="añadirImagen();">
+        <script>
+            function añadirImagen (){
+                let imagen=document.createElement("img");
+                imagen.src= prompt("Introduce la URL de la imagen y se incrustará en la página. ");
+                document.body.appendChild(imagen);    
+            }
+        </script>
+    </body>
+</html>

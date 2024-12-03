@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document DOM</title>
+    </head>
+    <body>
+        <script>
+            function añadirCabecera(){
+                var cabecera = document.createElement("H1");
+                cabecera.innerHTML="Mi primera cabecera";
+                document.body.appendChild(cabecera);
+            }
+            
+            function añadirCabecera(){ //forma más eficiente y segura
+                let cabecera=document.createElement("H1");
+                let nodoTexto=document.createTextNode("Mi primera cabecera");
+                cabecera.appendChild(nodoTexto);
+                document.body.appendChild(cabecera);
+            }
+
+            function añadirImagen(){
+                let imagen=document.createElement("img");
+                imagen.src="https://flic.kr/p/2pe4Qe";
+                document.body.appendChild(imagen);
+            }
+        </script>
+    </body>
+</html>

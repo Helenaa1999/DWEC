@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset="UTF-8">
+        <title>Ciudades</title>
+        <style>
+            div{
+                height: 100px;
+                width: 100px;
+            }
+            #caja1{
+                border:solid 5px red;
+            }
+            #caja2{
+                border: solid 5px green;
+            }
+            #caja3{
+                border:solid 5px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input type="button" value="Añadir cabecera" onclick="añadirCabeceras();">
+            <div id="caja1"></div>
+            <div id="caja2"></div>
+            <div id="caja3"></div>
+        </div>
+        <script>
+            function añadirCabeceras(){
+                let respuestaCiudades="";
+                let arrayCiudades;
+                let nodoTexto=document.createTextNode("Hola amigos");
+                respuestaCiudades=prompt("Introduce tres ciudades (Escríbelas separadas por , )");
+                arrayCiudades= respuestaCiudades.split(",");
+                if(arrayCiudades.length==3){
+                    nodoTexto=document.createTextNode(arrayCiudades[0]);
+                    document.getElementById("caja1").appendChild(nodoTexto);
+                    nodoTexto=document.createTextNode(arrayCiudades[1]);
+                    document.getElementById("caja2").appendChild(nodoTexto);
+                    nodoTexto=document.createTextNode(arrayCiudades[2]);
+                    document.getElementById("caja3").appendChild(nodoTexto);
+                }
+                else{
+                    alert("Entrada errónea")
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <div id="contenedor">
+        <img id="verde" src="./img/verde.jpg" alt="Bosque verde" height="120" width="150">
+    </div>
+
+    <script>
+        var imagen=document.getElementById("verde");
+
+        imagen.addEventListener("mouseover", agrandarImagen);
+        imagen.addEventListener("mouseout", reducirImagen);
+        
+        function agrandarImagen(){
+            imagen.width=350;
+            imagen.height=300;
+        }
+
+        function reducirImagen(){
+            imagen.width=150;
+            imagen.height=120;
+        }
+    </script>
+</body>
+</html>

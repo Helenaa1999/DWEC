@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+</head>
+<body>
+    <img id="img" src="./img/cozy.jpg" alt="Cozy" width="500px">
+
+    <script>
+        let imagen = document.getElementById("img");
+        let descripcion=null;
+        imagen.addEventListener("mouseover", añadirDescripcion);
+        imagen.addEventListener("mouseout", eliminarDescripcion)
+        
+        function añadirDescripcion(){
+            descripcion=document.createElement("h1");
+            descripcion.innerHTML="En la imagen se puede observar un salón cozy";
+            document.body.appendChild(descripcion);
+        }
+
+        function eliminarDescripcion(){
+            document.body.removeChild(descripcion);
+        }
+        
+    </script>
+</body>
+</html>

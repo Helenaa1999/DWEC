@@ -1,0 +1,41 @@
+<!--
+Enunciado del Proyecto: Sistema de Gestión de Aeropuerto
+
+Crea un sistema de gestión de un aeropuerto utilizando JavaScript orientado a objetos. El proyecto debe cumplir con los siguientes requisitos:
+
+    Objetos Principales:
+    Diseña al menos cuatro clases relacionadas con el funcionamiento del aeropuerto. Ejemplos:
+        Avión: Información como matrícula, modelo, capacidad, y estado (activo/inactivo).
+        Pasajero: Detalles como nombre, documento de identidad, nacionalidad, y vuelo asignado.
+        Vuelo: Información del número de vuelo, origen, destino, hora de salida, y lista de pasajeros.
+        Empleado: Datos como nombre, posición (piloto, azafata, personal de tierra), y vuelo asignado.
+
+    Herencia:
+    Implementa al menos una relación de herencia. Por ejemplo:
+        Una clase Tripulante que herede de Empleado y tenga un atributo adicional como "certificación".
+        Una clase Carga que herede de Vuelo con un atributo específico como "peso máximo permitido".
+
+    Modularidad:
+    Utiliza los módulos de ES6 (export e import) para organizar el proyecto. Cada clase debe estar en su propio archivo y ser exportada al archivo principal.
+
+    Clase Main:
+    Crea una clase principal (Main) en el archivo principal que:
+        Permita agregar nuevas instancias de los objetos principales (e.g., nuevos vuelos, pasajeros, etc.).
+        Incluya métodos para actualizar la información de un objeto específico (e.g., cambiar el destino de un vuelo o asignar un pasajero a un vuelo).
+        Ofrezca la opción de eliminar objetos (e.g., cancelar un vuelo o dar de baja un avión).
+
+    Interacción:
+        Proporciona un método para mostrar toda la información registrada en consola.
+        Realiza pruebas ejecutando todos los métodos de la clase Main. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aeropuerto Orientado a Objetos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+    </head>
+    <body>
+        <script type="Module" src="main.js"></script>        
+    </body>
+</html>

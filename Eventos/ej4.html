@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <label for="texto">Intro mensaje</label>
+    <input type="text" id="texto" name="texto">
+    <div>
+        <h1 class="contarCaracteres"></h1>
+    </div>
+    <script>
+        var texto = document.getElementById("texto");
+        texto.addEventListener('keyup', contarYMostrarNumCaracteres);
+        function contarYMostrarNumCaracteres(){
+            let numCaracteres = document.getElementById("texto").value.length;
+            let contador =document.getElementById("contadorCaracteres").innerHTML ="Número de caracteres " + numCaracteres;
+
+        }
+    </script>
+</body>
+</html>

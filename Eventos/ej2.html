@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #divCuadro{
+            background-color: green;
+            width: 300px;
+            height:200px;
+        }
+        #resaltado{
+            color: red;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divCuadro">
+       <p id="parrafo1">Hola amigos</p> 
+    </div>
+
+    <script>
+        var divCuadro=null;
+        divCuadro=document.getElementById("divCuadro");
+        divCuadro.addEventListener("mouseover", cambiarColorTamanio);
+        divCuadro.addEventListener("mouseout", reducirColorTamanio);
+
+        function cambiarColorTamanio(){
+            divCuadro.classList.add("resaltado");
+        }
+
+        function reducirColorTamanio(){
+            divCuadro.classList.remove("resaltado");
+        }
+    </script>
+</body>
+</html>

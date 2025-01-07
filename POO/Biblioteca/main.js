@@ -36,11 +36,21 @@ Probar los métodos de agregar, eliminar y actualizar libros.
 
 import Libro from "./Libro.js"
 import LibroDigital from "./LibroDigital.js"
-import GestorBiblioteca from "./GestorBiblioteca.js"
+import GestorBiblioteca from "./GestorBiblioteca.js";
 
-let gestorBiblioteca = new GestorBiblioteca;
-let libro= new Libro ("Harry Potter", "J.K Rowling", 300);
-gestorBiblioteca.push(libro);
-let libroDigital = new LibroDigital ("La amiga estupenda", "Elena Ferrante", 300, 50);
-gestorBiblioteca.push(libroDigital);
-gestorBiblioteca.listaLibros();
+let gestorBiblioteca = new GestorBiblioteca();
+let libro1= new Libro ("Harry Potter", "J.K Rowling", 300);
+gestorBiblioteca.agregarLibro(libro1);
+let libro2= new Libro("Nada", "Carmen Laforet", 200);
+gestorBiblioteca.agregarLibro(libro2);
+let libroDigital1 = new LibroDigital ("La amiga estupenda", "Elena Ferrante", 300, 50);
+gestorBiblioteca.agregarLibro(libroDigital1);
+let libroDigital2= new LibroDigital("Ana de las tejas verdes", "Lucy Maud Montgomery", 250);
+gestorBiblioteca.agregarLibro(libroDigital2)
+gestorBiblioteca.listarLibros();
+
+gestorBiblioteca.eliminarLibro(libroDigital2.id);
+gestorBiblioteca.listarLibros();
+
+gestorBiblioteca.actualizarLibro(libro2.id, {nombre:"Nada", autor: "Carmen Laforet", paginas: 201});
+gestorBiblioteca.listarLibros();

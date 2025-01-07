@@ -5,7 +5,7 @@ export default class GestionEstudiante{
         this.estudiantes=[];
     }
 
-    añadirEstudiante(estudiante){
+    anadirEstudiante(estudiante){
         this.estudiantes.push(estudiante);
     }
 

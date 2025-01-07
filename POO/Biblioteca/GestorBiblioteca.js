@@ -61,7 +61,7 @@ export default class GestorBiblioteca{
         
     }
 
-    listaLibros(){
+    listarLibros(){
         this.listadoLibros.forEach(libro=>console.log(libro.mostrarDetalle()));
     }
 }
